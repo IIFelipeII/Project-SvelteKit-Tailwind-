@@ -30,6 +30,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-node": "^1.0.0-next.78",
 		"svelte-countdown": "^1.1.0",
 		"svelte-simple-modal": "^1.4.1"
 	}
