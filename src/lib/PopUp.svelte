@@ -4,4 +4,6 @@
  
  <h1 class="font-bold text-xl">♡ {message} ♡</h1>
  <p>To see all our history</p>
-<img src="src/media/IMG-20220618-WA0017.jpg" alt="">
+<!-- <img src="src/media/IMG-20220618-WA0017.jpg" alt=""> -->
+
+<img src="https://i.ibb.co/Wkgc0yM/IMG-20220618-WA0017.jpg" alt="">

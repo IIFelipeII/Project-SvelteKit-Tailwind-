@@ -2,12 +2,17 @@
 	import Countdown from "$lib/Coun.svelte";
 	import Content  from "$lib/ContentPopUp.svelte";
 	import Modal from 'svelte-simple-modal';
+	// import imghead from 'media/unnamed.jpg';
+
 </script>
 
 
 <section class="">
 	<div class="img-start w-full">
-		<img src="src/media/unnamed.jpg" alt="">
+		<img src="https://i.ibb.co/jw5KmH7/unnamed.jpg" alt="">
+		<!-- <img src="src/media/unnamed.jpg" alt=""> -->
+		<!-- <img src={imghead} alt="SvelteKit" /> -->
+		
 	</div>
 
 <h1 class="text-5xl text-center py-10 font-semibold">Our Website is Coming Soon!</h1>
@@ -51,8 +56,8 @@
 
 <div class="center">
 	<div class="button hover:bg-violet-600   ">
-		<!-- <Modal><Content /></Modal> -->
-		<a href="/Home">Know our history <span class="text-sm tracking-widest">2022/12/31 ♡</span>  </a>
+		<Modal><Content /></Modal>
+		<!-- <a href="/Home">Know our history <span class="text-sm tracking-widest">2022/12/31 ♡</span>  </a> -->
 
 	</div>
 </div>
