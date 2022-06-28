@@ -21,7 +21,7 @@
 	<p class="text-center">
 		Soon we will celebrate our first six months of dating.
 	</p>
-<Countdown from="2022-06-31 22:30:00" dateFormat="YYYY-MM-DD H:m:s" zone="America/Bogota" let:remaining>
+<Countdown from="2022-06-31 04:30:00" dateFormat="YYYY-MM-DD H:m:s" zone="America/Bogota" let:remaining>
 	<div class="counter">
 		 {#if remaining.done === false}
 		 <!-- <span>{remaining.months} months</span> -->
@@ -45,20 +45,25 @@
 			 <p>seconds</p>
 		</div>
 		 {:else}
-		 <h2>The time has come!</h2>
+		 <!-- <div class="center delay">
+			<div class="button hover:bg-violet-600   ">				
+				<a href="/Home">Know our history <span class="text-sm tracking-widest">2022/12/31 ♡</span>  </a>
+			</div>
+		</div> -->
 		 {/if}
 	</div>
+
 </Countdown>	
+
 </div>
 
 
- 
+
 
 <div class="center">
 	<div class="button hover:bg-violet-600   ">
 		<Modal><Content /></Modal>
 		<!-- <a href="/Home">Know our history <span class="text-sm tracking-widest">2022/12/31 ♡</span>  </a> -->
-
 	</div>
 </div>
 
