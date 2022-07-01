@@ -14,6 +14,7 @@
 		"start": "node build/index.js"
 	},
 	"devDependencies": {
+		"@beyonk/svelte-mapbox": "^8.1.4",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "^10.4.7",
@@ -32,7 +33,9 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-node": "^1.0.0-next.78",
+		"node-sass": "^7.0.1",
 		"svelte-countdown": "^1.1.0",
+		"svelte-countup": "^0.2.6",
 		"svelte-simple-modal": "^1.4.1"
 	}
 }

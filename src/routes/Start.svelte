@@ -15,13 +15,14 @@
 		
 	</div>
 
-<h1 class="text-5xl text-center py-10 font-semibold">Our Website is Coming Soon!</h1>
+<h1 class="text-5xl text-center py-10 font-semibold animate-pulse ">Our Website is Coming Soon!</h1>
 
 <div class="my-10">
 	<p class="text-center">
 		Soon we will celebrate our first six months of dating.
 	</p>
-<Countdown from="2022-06-31 04:30:00" dateFormat="YYYY-MM-DD H:m:s" zone="America/Bogota" let:remaining>
+
+	<Countdown from="2022-06-31 04:30:00" dateFormat="YYYY-MM-DD H:m:s" zone="America/Bogota" let:remaining>
 	<div class="counter">
 		 {#if remaining.done === false}
 		 <!-- <span>{remaining.months} months</span> -->
@@ -44,13 +45,15 @@
 			 <span>{remaining.seconds} </span>
 			 <p>seconds</p>
 		</div>
+		
 		 {:else}
-		 <!-- <div class="center delay">
+		 <div class="center  anim">
 			<div class="button hover:bg-violet-600   ">				
-				<a href="/Home">Know our history <span class="text-sm tracking-widest">2022/12/31 ♡</span>  </a>
+				<a href="/Welcome">💗Click hereee!💗 <span class="text-sm tracking-widest"></span>  </a>
 			</div>
-		</div> -->
+		</div>
 		 {/if}
+		 <div class="block"><p>a</p></div>
 	</div>
 
 </Countdown>	
@@ -60,19 +63,41 @@
 
 
 
-<div class="center">
-	<div class="button hover:bg-violet-600   ">
+<div class="center  " id="scroll">
+	<div class="button hover:bg-violet-600  ">
 		<Modal><Content /></Modal>
 		<!-- <a href="/Home">Know our history <span class="text-sm tracking-widest">2022/12/31 ♡</span>  </a> -->
 	</div>
 </div>
 
 
+
 </section>
 
 <style>
+	section{
+			/* background: rgb(78,55,158);
+    background: linear-gradient(167deg, rgba(78,55,158,1) 0%, rgba(136,61,242,1) 29%, rgba(215,98,217,1) 100%);
+	 padding: 0;
+	 margin: 0; */
 
+	}
+	.block{
+		width: 100%;
+		position: absolute;
+		z-index: -1;
+		height:20rem ;
+		background-color: #282140;
+	}
+.anim{
+	animation: fadein 50s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 	.button{
+		color: whitesmoke;
 		font-size: 1.1rem;
 		margin: 1rem;
 		/* position: fixed; */
@@ -81,7 +106,7 @@
 		background-color: #282140;
 		border-radius: 2rem;
 		text-align: center;
-		width: 45%;
+		width: 75%;
 		cursor: pointer;
 	}
 	.center{

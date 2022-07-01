@@ -24,35 +24,19 @@
 	export let guides
 	
 // API quote end
-import Nav from '$lib/Navbar.svelte'
+// import Api from '$lib/Pharashe.svelte'
+// import Tittle from '$lib/tittle.svelte'
+// import Quoteapi  from '$lib/Quoteapi.svelte'
+ 
 
-
-let Tittle = 'Home' 
-let searchTerm = "";
 
 
 </script>
 
-
-<h1 class="font-semibold text-6xl mb-2 ">{Tittle}</h1>
-<section class="mb-20">
-
-	<Nav></Nav>
-	
-
-	<div class="card_quote mt-5">
-		<div class="p-3">
-			<h2 class="text-2xl">Loved you yesterday, love you still, always have, always will.</h2>
-			<p class="text-lg mt-2">– Elaine Davis</p>
-		</div>
-	</div>
-
-	<input class="w-full  search  text-lg p-4 my-4" bind:value={searchTerm} placeholder="Search place">
- 
 <div class="grid gap-4  grid-cols-2">
 	{#each guides as item}
 	<div class="card hover:shadow-2xl">
-		<a href="{item.link}" class="">
+		<a href="" class="">
 		<div class="card-img">
 			<img src="{item.image}" alt="">
 		</div>
@@ -62,24 +46,11 @@ let searchTerm = "";
 		</div>
 	</a>
 	</div>
+
 	{/each}
 </div>
-</section>
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;800;900&family=Shadows+Into+Light+Two&display=swap');
-.card_quote {
-	padding: 1em;
-       width: 100%;
-		 min-height: 10em;
-		border-radius: 1.5rem;
- 		 box-shadow: 0px 0px 28px rgba(213, 210, 214, 0.753);
-		 overflow: hidden;
-		 position: relative;
-		 h2{
-			font-family: 'Shadows Into Light Two';
-		 }
-}
-.card{
+	.card{
 		padding: 1em;
        width: 100%;
 		 min-height: 23em;
@@ -98,7 +69,6 @@ let searchTerm = "";
 		padding: 0;
 		img{
 			top: -2rem;
-			width: 100%;
 			// position: absolute;
 		}
 	
@@ -115,8 +85,26 @@ let searchTerm = "";
 		box-shadow: 0px 0px 28px rgba(213, 210, 214, 0.753);
 	}
 
-.search{
-	background-color: #EBEDF2;	border-radius: 1.5rem;
-	box-shadow: 0px 0px 28px rgba(213, 210, 214, 0.753);
+</style>
+
+<!-- <script>
+import {onMount} from 'svelte';
+let promise = fetchData();
+async function fetchData(){
+	
+	const response = await fetch ('src/routes/api/places.json');
+	return await response.json(); 
 }
- </style>
+
+onMount(()=>{
+	promise = fetchData();
+});
+</script>
+<h1>Poki</h1>
+
+{#await promise}
+	Loading...
+{:then result} 
+	{JSON.stringify(result)}
+{/await}  -->
+<!-- <h2>{$json}</h2> -->
