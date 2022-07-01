@@ -1,7 +1,7 @@
 <script context="module">
 	// API quote 
 	export async function load({ fetch }){
-		const res = await  fetch('src/routes/api/places.json')
+		const res = await  fetch('https://raw.githubusercontent.com/IIFelipeII/Project-SvelteKit-Tailwind-/main/src/routes/api/places.json')
 		const guides = await res.json()
 		if (res.ok){
 			return{
