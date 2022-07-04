@@ -15,17 +15,23 @@
 		
 	</div>
 
-<h1 class="text-5xl text-center py-10 font-semibold animate-pulse ">Our Website is Coming Soon!</h1>
+<!-- <h1 class="text-5xl text-center py-10 font-semibold animate-pulse ">Our Website is Coming Soon!</h1> -->
+<h1 class="text-5xl text-center py-10 font-semibold animate-pulse ">Soon we will celebrate our first twelve months of dating!</h1>
 
 <div class="my-10">
 	<p class="text-center">
-		Soon we will celebrate our first six months of dating.
+		<!-- Soon we will celebrate our first twelve months of dating. -->
+		31/12/2022
+
 	</p>
 
-	<Countdown from="2022-06-31 04:30:00" dateFormat="YYYY-MM-DD H:m:s" zone="America/Bogota" let:remaining>
+	<Countdown from="2022-12-30 04:30:00" dateFormat="YYYY-MM-DD H:m:s" zone="America/Bogota" let:remaining>
 	<div class="counter">
 		 {#if remaining.done === false}
-		 <!-- <span>{remaining.months} months</span> -->
+		 <div class="counter-box">
+		 <span>{remaining.months}</span>
+		 <p>months</p>
+		</div>
 		 <div class="counter-box">
 			<span>{remaining.days} </span>
 			<p>days</p>
@@ -65,8 +71,8 @@
 
 <div class="center  " id="scroll">
 	<div class="button hover:bg-violet-600  ">
-		<Modal><Content /></Modal>
-		<!-- <a href="/Home">Know our history <span class="text-sm tracking-widest">2022/12/31 ♡</span>  </a> -->
+		<!-- <Modal><Content /></Modal> -->
+		<a href="/Home">Know our history <span class="text-sm tracking-widest">2022/12/31 ♡</span>  </a>
 	</div>
 </div>
 
@@ -130,7 +136,7 @@
 	
 	}
 	.counter-box span{
-		font-size: 2.9rem;
+		font-size: 1.5rem;
 		font-weight: 800;
 		text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.678);
 	}

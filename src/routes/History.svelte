@@ -7,10 +7,10 @@
 <Nav></Nav>
 
 
-<div class="card h-26 my-5 text-xl">
+<!-- <div class="card h-26 my-5 text-xl">
 	<h2 class="font-light text-2xl mb-1">We have been dating for</h2>
 	<span><Countup></Countup> </span>Days!
-</div>
+</div> -->
 <a href="/iframeMiro">
 <div class="card h-80 mt-10">
 	<div class="card-img">
